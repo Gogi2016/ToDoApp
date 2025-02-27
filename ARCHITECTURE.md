@@ -1,36 +1,100 @@
-Project Title: To-Do App
-Domain: Personal Productivity / Task Management
-Problem Statement: The To-Do App allows users to manage tasks, authenticate and track their task history.
- Individual Scope: This web application uses the browser's local storage to manage user authentication and tasks.
-C4 Diagram Structure:
-Level 1 - System Context Diagram:
+# To-Do List Application Architecture
 
-The system is a simple web application where a user interacts with the To-Do App.
-The system interacts with Local Storage to persist tasks and authentication data.
-Level 2 - Container Diagram:
+## 1. Introduction
 
-Web Application (Browser): The client-side application runs in the user's browser.
-Local Storage: The data is stored locally on the user's browser, keeping track of the user’s tasks and login information.
-Level 3 - Component Diagram:
+### Project Title:
+To-Do List Application
 
-Login Component: Handles registration, login, and password recovery.
-Task Management Component: Handles task creation, update, and deletion.
-History Component: Stores and retrieves tasks from local storage.
-Level 4 - Code Diagram:
+### Domain: Productivity
 
-This will show individual components in more detail (we can create this based on specific code implementations later).
-4. To-Do App Features Breakdown
-Authentication:
+### Problem Statement:
+Users often struggle with managing daily tasks efficiently. This To-Do List application allows users to register, log in, and manage their tasks seamlessly. The system will leverage local storage for persistence, ensuring task history is maintained across sessions.
 
-Register: User registers with a username and password.
-Login: User logs in with the same credentials.
-Forgot Password: User can reset their password.
-Task Management:
+### Individual Scope:
+This system is a single-page web application (SPA) designed for individual use. It does not require backend integration, making it lightweight and highly feasible for development within the given timeframe.
 
-Add Task: A user can create a new task with a description.
-Edit Task: User can modify the task description.
-Update Status: Task status can be marked as "Completed," "Incomplete," or "Stuck."
-Delete Task: User can delete tasks.
-History:
+## C4 Model Architecture
 
-Local Storage: Tasks are saved in local storage, so they persist even after the user logs out or refreshes the page.
+  ###  Context Diagram
+- **Actors:**
+  - User: Interacts with the application via a web browser.
+- **System:**
+  - To-Do List Web Application
+- **External Dependencies:**
+  - Browser Local Storage (for data persistence)
+  
+**Diagram Representation:**
+
+graph TD;
+  User -->|Uses| ToDoApp
+  ToDoApp -->|Stores data in| LocalStorage
+
+  ### Container Diagram
+**Main Containers:**
+- **Frontend (Web Application):** Handles UI interactions and task management logic.
+- **Local Storage:** Used for storing user authentication data and tasks.
+
+**Diagram Representation:**
+```mermaid
+graph TD;
+  subgraph Browser
+    UI[Frontend (HTML, CSS, JavaScript)]
+  end
+  subgraph Storage
+    LS[Local Storage]
+  end
+  UI -->|Read/Write| LS
+```
+
+  ### Component Diagram
+**Key Components:**
+- **Authentication Module:** Manages user registration, login, and logout.
+- **Task Management Module:** Allows users to add, edit, update, and delete tasks.
+- **Local Storage Manager:** Handles storing and retrieving data.
+
+**Diagram Representation:**
+```mermaid
+graph TD;
+  subgraph ToDoApp
+    Auth[Authentication Module]
+    Task[Task Management Module]
+    Storage[Local Storage Manager]
+  end
+  Auth -->|User Credentials| Storage
+  Task -->|Task Data| Storage
+```
+
+  ## Code Diagram 
+A high-level breakdown of core modules and their relationships:
+classDiagram
+  class ToDoApp {
+    +register()
+    +login()
+    +logout()
+  }
+  class TaskManager {
+    +addTask()
+    +editTask()
+    +updateTask()
+    +deleteTask()
+  }
+  class LocalStorageManager {
+    +saveData()
+    +retrieveData()
+  }
+  ToDoApp --> LocalStorageManager
+  TaskManager --> LocalStorageManager
+
+## Technology Stack
+- **Frontend:** HTML, CSS, JavaScript
+- **Storage:** Local Storage (Browser-based)
+
+---
+
+## 4. Future Enhancements
+- Implement a backend with Node.js.
+- Add reminders and notifications.
+- Introduce task categorization and priorities.
+- Develop a mobile app version.
+
+

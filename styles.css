@@ -1,77 +1,222 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7f82, #f0f4f7); /* Subtle gradient background */
     color: #333;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #28a745;
+  }
+  
+  h1, h2 {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#error {
-    color: red;
-    font-size: 14px;
-}
-
-#taskList {
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    margin: 10px;
+    padding: 12px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #4CAF50;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  #task-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #task-list {
     list-style-type: none;
     padding: 0;
-}
-
-#taskList li {
+  }
+  
+  ul li {
     background-color: #f9f9f9;
+    padding: 12px;
     margin: 5px 0;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-button#logoutBtn {
-    background-color: #dc3545;
-}
-
-button#logoutBtn:hover {
-    background-color: #c82333;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul li.complete {
+    background-color: #e0f7fa;
+  }
+  
+  ul li.incomplete {
+    background-color: #ffebee;
+  }
+  
+  button.delete {
+    background: transparent;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  button.delete:hover {
+    color: #b71c1c;
+  }
+  
+  button.update, button.edit {
+    background: transparent;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  button.update:hover, button.edit:hover {
+    color: #388e3c;
+  }
+  
+  .page {
+    display: none;
+  }
+  
+  #welcome-page {
+    display: block;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+  .welcome-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tagline {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .cta-container {
+    margin-top: 20px;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .image-container {
+    margin-top: 30px;
+  }
+  
+  .welcome-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  button.back-icon, button.home-icon {
+    position: absolute;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  button.back-icon {
+    left: 20px;
+  }
+  
+  button.home-icon {
+    right: 20px;
+  }
+  
+  /* Specific page styling */
+  #task-page {
+    padding: 20px;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  #register-page, #login-page {
+    width: 350px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #register-page input, #login-page input {
+    width: 80%;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  h1, h2 {
+    color: #4CAF50;
+  }
+  
