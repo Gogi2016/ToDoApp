@@ -53,16 +53,7 @@ graph TD;
 - **Local Storage Manager:** Handles storing and retrieving data.
 
 **Diagram Representation:**
-```mermaid
-graph TD;
-  subgraph ToDoApp
-    Auth[Authentication Module]
-    Task[Task Management Module]
-    Storage[Local Storage Manager]
-  end
-  Auth -->|User Credentials| Storage
-  Task -->|Task Data| Storage
-```
++------------------+ +-------------------+ +-----------------------+ | | | | | | | User Device | <---- | Web Application | <---- | Local Storage | | (Browser) | | (Frontend) | | (Client-Side) | | | | | | | +------------------+ +-------------------+ +-----------------------+
 
   ## Code Diagram 
 A high-level breakdown of core modules and their relationships:
