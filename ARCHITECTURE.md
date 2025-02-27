@@ -5,7 +5,8 @@
 ### Project Title:
 To-Do List Application
 
-### Domain: Productivity
+### Domain:
+Productivity
 
 ### Problem Statement:
 Users often struggle with managing daily tasks efficiently. This To-Do List application allows users to register, log in, and manage their tasks seamlessly. The system will leverage local storage for persistence, ensuring task history is maintained across sessions.
@@ -13,9 +14,11 @@ Users often struggle with managing daily tasks efficiently. This To-Do List appl
 ### Individual Scope:
 This system is a single-page web application (SPA) designed for individual use. It does not require backend integration, making it lightweight and highly feasible for development within the given timeframe.
 
-## C4 Model Architecture
+---
 
-  ###  Context Diagram
+## 2. C4 Model Architecture
+
+### 2.1 Context Diagram
 - **Actors:**
   - User: Interacts with the application via a web browser.
 - **System:**
@@ -23,13 +26,14 @@ This system is a single-page web application (SPA) designed for individual use. 
 - **External Dependencies:**
   - Browser Local Storage (for data persistence)
   
-**Diagram Representation:**
-
+**Diagram Representation (Mermaid Syntax):**
+```mermaid
 graph TD;
   User -->|Uses| ToDoApp
   ToDoApp -->|Stores data in| LocalStorage
+```
 
-  ### Container Diagram
+### 2.2 Container Diagram
 **Main Containers:**
 - **Frontend (Web Application):** Handles UI interactions and task management logic.
 - **Local Storage:** Used for storing user authentication data and tasks.
@@ -46,17 +50,27 @@ graph TD;
   UI -->|Read/Write| LS
 ```
 
-  ### Component Diagram
+### 2.3 Component Diagram
 **Key Components:**
 - **Authentication Module:** Manages user registration, login, and logout.
 - **Task Management Module:** Allows users to add, edit, update, and delete tasks.
 - **Local Storage Manager:** Handles storing and retrieving data.
 
 **Diagram Representation:**
-+------------------+ +-------------------+ +-----------------------+ | | | | | | | User Device | <---- | Web Application | <---- | Local Storage | | (Browser) | | (Frontend) | | (Client-Side) | | | | | | | +------------------+ +-------------------+ +-----------------------+
+```mermaid
+graph TD;
+  subgraph ToDoApp
+    Auth[Authentication Module]
+    Task[Task Management Module]
+    Storage[Local Storage Manager]
+  end
+  Auth -->|User Credentials| Storage
+  Task -->|Task Data| Storage
+```
 
-  ## Code Diagram 
+### 2.4 Code Diagram (Optional)
 A high-level breakdown of core modules and their relationships:
+```mermaid
 classDiagram
   class ToDoApp {
     +register()
@@ -75,17 +89,26 @@ classDiagram
   }
   ToDoApp --> LocalStorageManager
   TaskManager --> LocalStorageManager
+```
 
-## Technology Stack
+---
+
+## 3. Technology Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **Storage:** Local Storage (Browser-based)
 
 ---
 
 ## 4. Future Enhancements
-- Implement a backend with Node.js.
+- Implement a backend with Firebase or Node.js.
 - Add reminders and notifications.
 - Introduce task categorization and priorities.
 - Develop a mobile app version.
 
+---
+
+## 5. References
+- C4 Model Guide
+- Mermaid Documentation
+- JavaScript Local Storage API
 
