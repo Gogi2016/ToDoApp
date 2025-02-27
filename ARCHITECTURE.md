@@ -44,7 +44,7 @@ The system uses a client-side architecture, with data being stored locally in th
   - Browser Local Storage (for data persistence)
   
 **Diagram Representation (Mermaid Syntax):**
-```
+``` mermaid
 graph TD;
   User -->|Uses| ToDoApp
   ToDoApp -->|Stores data in| LocalStorage
@@ -56,7 +56,7 @@ graph TD;
 - **Local Storage:** Used for storing user authentication data and tasks.
 
 **Diagram Representation:**
-```
+``` mermaid
 graph TD;
   subgraph Browser
     UI[Frontend (HTML, CSS, JavaScript)]
@@ -74,7 +74,7 @@ graph TD;
 - **Local Storage Manager:** Handles storing and retrieving data.
 
 **Diagram Representation:**
-```
+``` mermaid
 graph TD;
   subgraph ToDoApp
     Auth[Authentication Module]
@@ -85,7 +85,7 @@ graph TD;
   Task -->|Task Data| Storage
 ```
 
-### 2.4 Code Diagram (Optional)
+### 2.4 Code Diagram 
 A high-level breakdown of core modules and their relationships:
 ```mermaid
 classDiagram
