@@ -1,14 +1,26 @@
-## Introduction
+# System Specification: To-Do App
 
-## Project Title: To-Do List Application
+## Project Title: To-Do App
 
-## Domain: Productivity
+## Domain: Productivity Tools
 
-## Problem Statement: 
-Many users struggle to manage their daily tasks effectively, often losing track of pending work or failing to prioritize tasks. The To-Do List Application aims to provide a simple yet powerful tool to help users create, manage, and track their tasks efficiently. The system will allow users to register, log in, add tasks, update task status, and store task history using local storage.
+### Problem Statement
 
-## Individual Scope:
-The application will be developed as a lightweight, browser-based task management system that requires no backend, making it highly feasible for solo development. It will utilize local storage for data persistence and ensure a smooth user experience through an intuitive UI. The project is realistic within the given timeframe and scope.
+The purpose of the To-Do App is to provide a simple yet effective way for users to manage their daily tasks. Many users struggle with staying organized and focused throughout the day, and a to-do app is an ideal solution. This app will allow users to track, update, and prioritize their tasks, helping them stay productive and meet their goals.
+
+### Individual Scope
+
+The feasibility of the To-Do App is high, as it is a relatively simple project to implement using basic web technologies (HTML, CSS, and JavaScript). The app will not require any backend infrastructure or server-side databases, as it relies solely on the browser’s local storage for data persistence. The app is intended for individual use, where a user can register, log in, and manage their own tasks. The project scope includes:
+
+- User registration and login system.
+- Task management system (add, update, delete tasks).
+- Data persistence using local storage.
+- User interface with clear, simple design.
+
+### Feasibility Justification
+
+Given the simplicity of the requirements and the use of front-end technologies, the app is feasible to implement within a short time frame. The main challenge will be ensuring the user interface is intuitive and responsive. Since the app uses local storage, there is no need for a server-side backend, making the app highly feasible for development and deployment.
+
 
 ## Functional Requirements
   **User Authentication:**
