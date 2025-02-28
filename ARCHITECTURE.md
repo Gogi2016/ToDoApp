@@ -115,7 +115,7 @@ classDiagram
     +deleteTask()
   }
   class PasswordReset {
-    +sendResetLink()
+    +sendNewPassword()
     +updatePassword()
   }
   class AccountDeletion {
