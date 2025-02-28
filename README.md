@@ -53,8 +53,7 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
    
 ### Links
 
-## WebApp live link
--[https://gogi2016.github.io/ToDoApp/]
+  # WebApp live link : [https://gogi2016.github.io/ToDoApp/]
 
 - [SPECIFICATION.md](SPECIFICATION.md)
 - [ARCHITECTURE.md](ARCHITECTURE.md)
