@@ -160,15 +160,20 @@ body {
     background-color: #45a049;
   }
   
-  .image-container {
-    margin-top: 30px;
-  }
-  
   .welcome-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-  }
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   
   button.back-icon, button.home-icon {
     position: absolute;
@@ -220,3 +225,72 @@ body {
     color: #4CAF50;
   }
   
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #welcome-page {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .welcome-container {
+    width: 100%;
+  
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  #register-page, #login-page {
+    width: 90%;
+    max-width: 400px;
+    margin-left: 40px;
+  }
+
+  button.back-icon, button.home-icon {
+    font-size: 24px;
+  }
+
+  .image-container {
+    display: flex; /* Ensure it remains visible */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .welcome-image {
+    max-width: 80%; /* Adjust size to fit smaller screens */
+    height: auto;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  #task-page {
+    width: 100%;
+    padding: 10px;
+  }
+}
