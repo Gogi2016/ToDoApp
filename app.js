@@ -126,26 +126,27 @@ function generateRandomPassword() {
     }
   }
   
-  // Load tasks when logged in
-  function loadTasks(email) {
-    const loggedInUser = JSON.parse(localStorage.getItem('loggedIn'));
-    document.getElementById('user-name').textContent = loggedInUser.name;
-    const tasks = JSON.parse(localStorage.getItem(email)) || [];
-    const taskList = document.getElementById('task-list');
-    taskList.innerHTML = '';
-  
-    tasks.forEach((task, index) => {
-      const li = document.createElement('li');
-      li.classList.add(task.status === 'incomplete' ? 'incomplete' : 'complete');
-      li.innerHTML = `
-        ${task.name} - ${task.status} 
-        <button onclick="updateTaskStatus(${index}, '${email}')">Update Status</button> 
+ // Load tasks when logged in
+function loadTasks(email) {
+  const loggedInUser = JSON.parse(localStorage.getItem('loggedIn'));
+  document.getElementById('user-name').textContent = loggedInUser.name;
+  const tasks = JSON.parse(localStorage.getItem(email)) || [];
+  const taskList = document.getElementById('task-list');
+  taskList.innerHTML = '';
+
+  tasks.forEach((task, index) => {
+    const li = document.createElement('li');
+    li.classList.add(task.status === 'incomplete' ? 'incomplete' : 'complete');
+    li.innerHTML = 
+      `${task.name} - ${task.status}
+      <div class="task-actions">
+        <button onclick="updateTaskStatus(${index}, '${email}')">Update Status</button>
         <button onclick="editTask(${index}, '${email}')">Edit</button>
         <button class="delete" onclick="deleteTask(${index}, '${email}')">Delete</button>
-      `;
-      taskList.appendChild(li);
-    });
-  }
+      </div>`;
+    taskList.appendChild(li);
+  });
+}
   
   // Update task status (completed/incomplete)
   function updateTaskStatus(index, email) {
