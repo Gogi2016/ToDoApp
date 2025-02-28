@@ -119,9 +119,10 @@ The architecture is simple and does not require any external servers or database
 - **Storage:** Local Storage (Browser-based)
 
 ## 4. Future Enhancements
-- Implement a backend with Firebase or Node.js.
+- Implement a backend with Firebase or Node.js. (forgot password functionality)
 - Add reminders and notifications.
 - Introduce task categorization and priorities.
 - Develop a mobile app version.
+  
 
 
