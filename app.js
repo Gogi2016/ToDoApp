@@ -66,6 +66,44 @@ function navigateTo(page) {
       alert('Invalid email or password!');
     }
   });
+
+  // Function to recover password
+function recoverPassword() {
+  // Ask for the email
+  const email = prompt("Enter your registered email address:");
+
+  if (email) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const user = users.find(u => u.email === email);
+
+    if (user) {
+      // Generate a new password (for simplicity, we are generating a random password)
+      const newPassword = generateRandomPassword();
+      user.password = newPassword;
+
+      // Save the updated user details in local storage
+      localStorage.setItem('users', JSON.stringify(users));
+
+      // Alert the user with the new password
+      alert(`Your new password is: ${newPassword}`);
+    } else {
+      alert('Email not found!');
+    }
+  } else {
+    alert('Please enter a valid email!');
+  }
+}
+
+// Function to generate a random password
+function generateRandomPassword() {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let password = '';
+  for (let i = 0; i < 8; i++) {  // You can change the length as needed
+    const randomIndex = Math.floor(Math.random() * chars.length);
+    password += chars[randomIndex];
+  }
+  return password;
+}
   
   // Task Management
   function showTaskForm() {
