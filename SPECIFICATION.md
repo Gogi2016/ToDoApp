@@ -6,11 +6,12 @@
 The purpose of the To-Do App is to provide a simple yet effective way for users to manage their daily tasks. Many users struggle with staying organized and focused throughout the day, and a to-do app is an ideal solution. This app will allow users to track, update, and prioritize their tasks, helping them stay productive and meet their goals.
 
 ### Individual Scope
-The feasibility of the To-Do App is high, as it is a relatively simple project to implement using basic web technologies (HTML, CSS, and JavaScript). The app will not require any backend infrastructure or server-side databases, as it relies solely on the browser’s local storage for data persistence. The app is intended for individual use, where a user can register, log in, reset their password, and manage their own tasks. The project scope includes:
+The feasibility of the To-Do App is high, as it is a relatively simple project to implement using basic web technologies (HTML, CSS, and JavaScript). The app will not require any backend infrastructure or server-side databases, as it relies solely on the browser’s local storage for data persistence. The app is intended for individual use, where a user can register, log in, reset their password, manage their tasks, and delete their account if needed. The project scope includes:
 
 - User registration and login system
 - Password reset functionality for users who forget their passwords
 - Task management system (add, update, delete tasks)
+- Account deletion functionality (delete user account and all associated data)
 - Data persistence using local storage
 - User interface with a clear, simple design
 
@@ -31,6 +32,10 @@ Given the simplicity of the requirements and the use of front-end technologies, 
 - Users can update the status of tasks (Completed, Incomplete, Stuck).
 - Users can delete tasks.
 - Users can view their task history when they log in again.
+
+### Account Deletion:
+- Users can delete their account and all associated data (tasks, preferences, etc.).
+- Deleting the account will also remove all the user’s data from local storage, ensuring complete removal.
 
 ### Logout:
 - Users can log out securely.
