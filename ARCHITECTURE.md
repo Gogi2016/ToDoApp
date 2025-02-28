@@ -67,6 +67,7 @@ graph TD
   end
   UI -->|Read/Write| LS
 
+```
 
 ### 2.3 Component Diagram
 **Key Components:**
