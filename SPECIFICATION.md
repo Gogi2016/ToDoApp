@@ -38,12 +38,12 @@ Given the simplicity of the requirements and the use of front-end technologies, 
 ## Non-Functional Requirements
 
 -Usability: The UI should be simple, intuitive, and responsive. Users should be able to access the application easily from different devices.
-Performance: The application should work efficiently within a web browser without delays. Task operations (adding, updating, deleting) should execute instantly.
+-Performance: The application should work efficiently within a web browser without delays. Task operations (adding, updating, deleting) should execute instantly.
 -Security: Passwords will be securely stored using hashing techniques. Data will persist in local storage to maintain user experience.
 =Maintainability: The application will follow clean coding principles for easy future updates. Proper documentation will be provided for each feature.
 
 ## Technology Stack
-=Frontend: HTML, CSS, JavaScript
+-Frontend: HTML, CSS, JavaScript
 =Storage: Local Storage (Browser-based persistent data storage)
 -Frameworks/Libraries: None (Vanilla JavaScript for simplicity)
 
