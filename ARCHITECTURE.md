@@ -50,22 +50,23 @@ graph TD;
   ToDoApp -->|Stores data in| LocalStorage
 ```
 
-### 2.2 Container Diagram
-**Main Containers:**
-- **Frontend (Web Application):** Handles UI interactions and task management logic.
-- **Local Storage:** Used for storing user authentication data and tasks.
+### 2.2 Container Diagram  
+**Main Containers:**  
+- **Frontend (Web Application):** Handles UI interactions and task management logic.  
+- **Local Storage:** Used for storing user authentication data and tasks.  
 
-**Diagram Representation:**
-``` mermaid
-graph TD;
+**Diagram Representation:**  
+
+```mermaid
+graph TD
   subgraph Browser
-    UI[Frontend (HTML, CSS, JavaScript)]
+    UI["Frontend (HTML, CSS, JavaScript)"]
   end
   subgraph Storage
-    LS[Local Storage]
+    LS["Local Storage"]
   end
   UI -->|Read/Write| LS
-```
+
 
 ### 2.3 Component Diagram
 **Key Components:**
