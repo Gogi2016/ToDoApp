@@ -1,10 +1,11 @@
 # To-Do App
 
-Welcome to the **To-Do App**, your personal task management tool! This app helps you stay organized by allowing you to register, log in, and manage your tasks. It’s a simple, user-friendly application that allows you to track and organize your daily tasks.
+Welcome to the To-Do App, your personal task management tool! This app helps you stay organized by allowing you to register, log in, reset your password, and manage your tasks. It’s a simple, user-friendly application that allows you to track and organize your daily tasks.
 
 ## Features
 
 - **Registration and Login**: Users can register an account and log in to access their personal task list.
+- **Password Reset:** Users can reset their password if they forget it, using their email and the browser's local storage.
 - **Task Management**: Add, edit, delete, and update the status of your tasks.
 - **Task Status**: Tasks can be marked as "complete" or "incomplete".
 - **Local Storage**: All data is saved using the browser's `localStorage`, ensuring persistence between sessions.
@@ -30,6 +31,10 @@ Welcome to the **To-Do App**, your personal task management tool! This app helps
 
 5. **Logout**: 
     - When you're finished, you can log out and return to the login screen.
+  
+6. Password Reset
+    - If you forget your password, you can reset it via the Forgot Password link on the login 
+    page. You will be able to reset your password through local storage (without a backend service).
 
 ## Installation
 
