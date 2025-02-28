@@ -96,9 +96,9 @@ function recoverPassword() {
 
 // Function to generate a random password
 function generateRandomPassword() {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const chars = '0123456789';
   let password = '';
-  for (let i = 0; i < 8; i++) {  // You can change the length as needed
+  for (let i = 0; i < 4; i++) {  // You can change the length as needed
     const randomIndex = Math.floor(Math.random() * chars.length);
     password += chars[randomIndex];
   }
@@ -185,6 +185,24 @@ function generateRandomPassword() {
     document.getElementById('login-form').reset();  // Clear login inputs on logout
     navigateTo('login');
   }
+
+  // Function to delete the user's account
+function deleteAccount() {
+  const confirmation = confirm("Are you sure you want to permanently delete your account? This action cannot be undone.");
+  if (confirmation) {
+    const currentUser = JSON.parse(localStorage.getItem('loggedIn')); // Use 'loggedIn' instead of 'currentUser'
+    if (currentUser) {
+        // Delete the user from the users list
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        users = users.filter(user => user.email !== currentUser.email); // Filter out the current user
+
+        localStorage.setItem('users', JSON.stringify(users)); // Save updated users list
+        localStorage.removeItem('loggedIn'); // Remove logged-in user
+        alert("Your account has been permanently deleted.");
+        navigateTo('welcome'); // Redirect to welcome page after deletion
+    }
+  }
+}
   
   // Initialize app (check if user is logged in)
   if (localStorage.getItem('loggedIn')) {

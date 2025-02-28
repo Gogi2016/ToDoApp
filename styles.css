@@ -175,7 +175,7 @@ body {
 }
 
   
-  button.back-icon, button.home-icon {
+  button.back-icon {
     position: absolute;
     top: 20px;
     background: none;
@@ -183,6 +183,18 @@ body {
     font-size: 30px;
     cursor: pointer;
     color: #333;
+  }
+
+  button.home-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10; /* Ensures it's on top of other content */
   }
   
   button.back-icon {
@@ -259,8 +271,14 @@ body {
     margin-left: 40px;
   }
 
-  button.back-icon, button.home-icon {
+  button.back-icon {
     font-size: 24px;
+  }
+
+button.home-icon {
+    font-size: 25px;
+    top: 15px; /* Adjust top position */
+    right: 15px; /* Adjust right position */
   }
 
   .image-container {
@@ -292,5 +310,10 @@ body {
   #task-page {
     width: 100%;
     padding: 10px;
+  }
+  button.home-icon {
+    font-size: 20px;
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
   }
 }

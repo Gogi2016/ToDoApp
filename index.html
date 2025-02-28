@@ -49,20 +49,21 @@
     <p>Don't have an account? <button onclick="navigateTo('register')">Register</button></p>
   </div>
 
-  <!-- Task Management Page -->
-  <div id="task-page" class="page">
-    <button class="home-icon" onclick="navigateTo('welcome')">🏠</button>
-    <h1>Welcome, <span id="user-name"></span></h1>
-    <button onclick="logout()">Logout</button>
-    <h2>Your Tasks</h2>
-    <ul id="task-list"></ul>
-    <button onclick="showTaskForm()">Add New Task</button>
-    <div id="task-form" style="display: none;">
-      <input type="text" id="task-name" placeholder="Enter task name" required><br>
-      <textarea id="task-desc" placeholder="Enter task description"></textarea><br>
-      <button onclick="addTask()">Add Task</button>
-    </div>
+<!-- Task Management Page --> 
+ <div id="task-page" class="page">
+  <button class="home-icon" onclick="navigateTo('welcome')">🏠</button>
+  <h1>Welcome, <span id="user-name"></span></h1>
+  <button onclick="logout()">Logout</button>
+  <button onclick="deleteAccount()">Delete Account</button> <!-- Add this line for Delete Account -->
+  <h2>Your Tasks</h2>
+  <ul id="task-list"></ul>
+  <button onclick="showTaskForm()">Add New Task</button>
+  <div id="task-form" style="display: none;">
+    <input type="text" id="task-name" placeholder="Enter task name" required><br>
+    <textarea id="task-desc" placeholder="Enter task description"></textarea><br>
+    <button onclick="addTask()">Add Task</button>
   </div>
+</div>
 
   <script src="app.js"></script>
 </body>
