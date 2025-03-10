@@ -1,8 +1,4 @@
  ``` mermaid
-%% UML Use Case Diagram for To-Do App
-%% Uses 'usecaseDiagram' syntax
-
-usecaseDiagram
   actor User as "User"
   
   User --> (Register)
