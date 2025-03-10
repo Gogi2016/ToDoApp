@@ -3,18 +3,20 @@
 
  ``` mermaid
  
-  User --> (Register)
-  User --> (Login)
-  User --> (Reset Password)
-  User --> (Manage Tasks)
-  User --> (Mark Task as Complete)
-  User --> (Edit Task)
-  User --> (Delete Task)
-  User --> (Delete Account)
+graph TD;
+  User["👤 User"] -->|Registers| Register["📝 Register"]
+  User -->|Logs in| Login["🔑 Login"]
+  User -->|Resets Password| ResetPassword["🔄 Reset Password"]
+  User -->|Manages Tasks| TaskManagement["📋 Manage Tasks"]
+  User -->|Marks Task as Complete| CompleteTask["✅ Mark Task as Complete"]
+  User -->|Edits Task| EditTask["✏️ Edit Task"]
+  User -->|Deletes Task| DeleteTask["🗑️ Delete Task"]
+  User -->|Deletes Account| DeleteAccount["⚠️ Delete Account"]
+  
+  TaskManagement -->|Includes| AddTask["➕ Add Task"]
+  TaskManagement -->|Includes| EditTask
+  TaskManagement -->|Includes| DeleteTask
 
-  (Manage Tasks) ..> (Add Task) : «includes»
-  (Manage Tasks) ..> (Edit Task) : «includes»
-  (Manage Tasks) ..> (Delete Task) : «includes»
 
  ```
 
