@@ -1,16 +1,23 @@
  ``` mermaid
-graph TD;
-  User -->|Registers| Register
-  User -->|Logs in| Login
-  User -->|Resets Password| ResetPassword
-  User -->|Manages Tasks| TaskManagement
-  User -->|Marks Task as Complete| CompleteTask
-  User -->|Edits Task| EditTask
-  User -->|Deletes Task| DeleteTask
-  User -->|Deletes Account| DeleteAccount
-  TaskManagement -->|Includes| AddTask
-  TaskManagement -->|Includes| EditTask
-  TaskManagement -->|Includes| DeleteTask
+%% UML Use Case Diagram for To-Do App
+%% Uses 'usecaseDiagram' syntax
+
+usecaseDiagram
+  actor User as "User"
+  
+  User --> (Register)
+  User --> (Login)
+  User --> (Reset Password)
+  User --> (Manage Tasks)
+  User --> (Mark Task as Complete)
+  User --> (Edit Task)
+  User --> (Delete Task)
+  User --> (Delete Account)
+
+  (Manage Tasks) ..> (Add Task) : «includes»
+  (Manage Tasks) ..> (Edit Task) : «includes»
+  (Manage Tasks) ..> (Delete Task) : «includes»
+
  ```
 
 ### Explanation
