@@ -1,6 +1,8 @@
+# Use Case Diagram
+## actor User as "User"
+
  ``` mermaid
-  actor User as "User"
-  
+ 
   User --> (Register)
   User --> (Login)
   User --> (Reset Password)
