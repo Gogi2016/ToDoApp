@@ -20,40 +20,41 @@ graph TD;
 
  ```
 
-### Explanation
+## Explanation
 
-## Key Actors:
-## User: The primary actor who interacts with the app.
+### Key Actors:
+#### User: The primary actor who interacts with the app.
 
 ## Relationships:
 "Task Management" includes "Add Task," "Edit Task," and "Delete Task."
 "Reset Password" and "Delete Account" are standalone features.
 
 ## Stakeholder Concerns Addressed:
-Ensures a clear flow of user actions.
-Enables secure authentication and task tracking.
+-Ensures a clear flow of user actions.
+-Enables secure authentication and task tracking.
 
-### Use Case Specifications
+# Use Case Specifications
 
-## Use Case: Register
+### Use Case: Register
 Actor: User
 Precondition: User is not already registered.
 Postcondition: User account is created.
 
-## Basic Flow:
+Basic Flow:
 -User enters email and password.
 -System validates inputs.
 -System saves credentials in local storage.
 -System confirms registration.
 
-Alternative Flow: If the email already exists, the system notifies the user.
+Alternative Flow: 
+-If the email already exists, the system notifies the user.
 
-## Use Case: Reset Password
+### Use Case: Reset Password
 Actor: User
 Precondition: User has an account.
 Postcondition: Password is updated.
 
-## Basic Flow:
+Basic Flow:
 -User requests a password reset.
 -System verifies user identity.
 -User enters a new password.
@@ -61,46 +62,43 @@ Postcondition: Password is updated.
 
 Alternative Flow: If identity cannot be verified, the reset fails.
 
-## Use Case: Add Task
+### Use Case: Add Task
 Actor: User
 Precondition: User is logged in.
 Postcondition: A new task is added.
 
-## Basic Flow:
+Basic Flow:
 -User enters task details.
 -System saves task to local storage.
 -Task appears on the dashboard.
 
 Alternative Flow: If input is empty, the system shows an error message.
 
-## Use Case: Edit Task
+### Use Case: Edit Task
 Actor: User
 Precondition: Task exists.
 Postcondition: Task details are updated.
 
-## Basic Flow:
+Basic Flow:
 -User selects a task.
 -User updates task details.
 -System saves changes.
 
 Alternative Flow: If no changes are made, the system does nothing.
 
-## Use Case: Delete Task
-
+### Use Case: Delete Task
 Actor: User
 Precondition: Task exists.
 Postcondition: Task is removed.
 
-## Basic Flow:
-
+Basic Flow:
 -User selects a task.
 -User confirms deletion.
 -System removes the task.
 
 Alternative Flow: If user cancels, the task remains.
 
-## Use Case: Mark Task as Complete
-
+### Use Case: Mark Task as Complete
 Actor: User
 Precondition: Task exists.
 Postcondition: Task is marked complete.
@@ -111,13 +109,12 @@ Basic Flow:
 
 Alternative Flow: If task is already complete, no change occurs.
 
-## Use Case: Delete Account
-
+### Use Case: Delete Account
 Actor: User 
 Precondition: User is logged in.
 Postcondition: Account is permanently deleted.
 
-## Basic Flow:
+Basic Flow:
 -User requests account deletion.
 -System confirms action.
 -System removes all user data from local storage.
