@@ -58,3 +58,5 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [SPECIFICATION.md](SPECIFICATION.md)
 - [ARCHITECTURE.md](ARCHITECTURE.md)
 -  [Reflection.md](Reflection.md)
+- [StakeholderAnalysis] (StakeholderAnalysis.md)
+- System Requirement (SystemRequirementDocument.md)
