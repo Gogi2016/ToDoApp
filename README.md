@@ -62,4 +62,4 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [SystemRequirement.md](SystemRequirementDocument.md)
 - [UseCase.md](UseCase.md)
 - [TestCase.md](TestCase.md)
-- [Agile Planning.md](AgilePlanning.md)
+- [Agile Planning.md](Docs/AgilePlanning.md)
