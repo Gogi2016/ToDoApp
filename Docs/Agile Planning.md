@@ -60,4 +60,4 @@
 
 ## 4. Reflection
 
-As the only stakeholder in this project, I faced challenges in prioritizing the user stories based on what would be most useful for the end-users, even though I am not yet collecting feedback from actual users. Additionally, aligning Agile practices with the project’s timeline and resources was difficult. The MoSCoW prioritization was particularly useful, though I had to be careful in estimating effort and ensuring that I focused on the most critical features for the MVP.
+As the only stakeholder in this project, I faced challenges in prioritizing the user stories based on what would be most useful for the end-users, even though I am not yet collecting feedback from actual users. aligning Agile practices with the project’s timeline and resources was difficult. 
