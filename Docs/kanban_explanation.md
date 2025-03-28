@@ -46,8 +46,10 @@ One key takeaway is that simple tools like GitHub Projects can be highly effecti
 
 In the future, I would further explore the integration of GitHub Projects with other tools to improve automation and reporting, especially if the app grows in complexity.
 
-Kanban screenshots
+## Kanban screenshots
 
 ![image](https://github.com/user-attachments/assets/484eacd9-ba11-4fac-9989-484271ac94b5)
+![image](https://github.com/user-attachments/assets/e2e8551c-6557-48f6-a756-6aefdacc95f0)
+
 
 
