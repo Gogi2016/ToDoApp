@@ -2,7 +2,7 @@
 
 ## What is a Kanban Board?
 
-A **Kanban board** is a visual tool for managing tasks and workflows. It uses **columns** to represent different stages of work, such as **To Do**, **In Progress**, and **Done**. Tasks move from one column to another, providing a visual representation of the work process and helping teams track progress efficiently.
+A **Kanban board** is a visual tool for managing tasks and workflows. It uses **columns** to represent different stages of work, such as **To Do**, **In Progress**, and **Done**. In the context of ToDoApp, this board will help organize tasks that need to be developed, tested, and deployed, ensuring that the development process is clear, organized, and efficient.
 
 ## How is Kanban Board Visualizes Workflow
 
@@ -18,12 +18,9 @@ Each task can be moved through these columns as it progresses, providing a clear
 
 ## How the Board Supports Agile Principles
 
-- **Transparency**: The Kanban board provides a clear visual overview of tasks, making it easy for team members to see what is being worked on and what’s pending. This supports the Agile principle of transparency.
-- **Work-in-Progress (WIP) Limitation**: By limiting the number of tasks in the **In Progress** column, we ensure that the team does not take on too much work at once, helping to maintain focus and quality.
-- **Flow Efficiency**: Tasks move through the board from left to right, helping to visualize the flow of work. This aligns with Agile principles of continuous delivery, ensuring that tasks are completed incrementally and consistently.
-
-The Kanban board is an essential tool for managing the workflow of **ToDoApp** tasks, ensuring that the development process is organized, visible, and efficient.
-
+- **Transparency**: The Kanban board gives all team members a clear view of the status of each task. This supports the Agile principle of transparency by showing who is working on what and the state of each task.
+- **Work-in-Progress (WIP) Limitation**: You can set WIP limits on each column, ensuring that no team member is overwhelmed and that work flows efficiently. For example, there may be a limit on how many tasks can be in the In Progress column at any given time.
+- **Flow Efficiency**: The flow from To Do to In Progress to Testing and Done aligns with Agile principles of continuous delivery and ensuring work is done incrementally
 
 # Reflection on GitHub Kanban Board Customization
 
