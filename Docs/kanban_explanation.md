@@ -45,3 +45,9 @@ The process of setting up the Kanban board in GitHub taught me the importance of
 One key takeaway is that simple tools like GitHub Projects can be highly effective for smaller projects, but for more complex applications, you might want to explore tools like Jira or Trello. Nonetheless, **GitHub Projects** worked well for **ToDoApp**, providing a simple and straightforward solution for managing tasks.
 
 In the future, I would further explore the integration of GitHub Projects with other tools to improve automation and reporting, especially if the app grows in complexity.
+
+Kanban screenshots
+
+![image](https://github.com/user-attachments/assets/484eacd9-ba11-4fac-9989-484271ac94b5)
+
+
