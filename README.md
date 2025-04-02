@@ -53,15 +53,14 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
    
 ### Links
 
-  ##### WebApp live link : [https://gogi2016.github.io/ToDoApp/]
+##### WebApp Live Link: [To-Do App](https://gogi2016.github.io/ToDoApp/)
 
-- [Architecture Document](Docs/ARCHITECTURE.md)
-- [Agile Planning Document](Docs/Agile-Planning.md)
-- [Specification Document](Docs/SPECIFICATION.md)
-- [Stakeholder Analysis Document](Docs/StakeholderAnalysis.md)
-- [System Requirement Document](Docs/SystemRequirementDocument.md)
-- [Test Case Document](Docs/TestCase.md)
-- [Use Case Document](Docs/UseCase.md)
-- [Test Case Document](TestCase.md)
-- [Use Case Document](UseCase.md)
+- [Architecture Document](Docs/Specification%20and%20Architectural%20Modeling/ARCHITECTURE.md)
+- [Agile Planning Document](Docs/Agile%20User%20Stories%2C%20Backlog%2C%20and%20Sprint%20Planning/Agile-Planning.md)
+- [Specification Document](Docs/Specification%20and%20Architectural%20Modeling/SPECIFICATION.md)
+- [Stakeholder Analysis Document](Docs/Stakeholder%20and%20System%20Requirements/StakeholderAnalysis.md)
+- [System Requirement Document](Docs/Stakeholder%20and%20System%20Requirements/SystemRequirementDocument.md)
+- [Test Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/TestCase.md)
+- [Use Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/UseCase.md)
+
 
