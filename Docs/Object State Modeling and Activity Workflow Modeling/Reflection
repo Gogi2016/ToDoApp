@@ -1,0 +1,14 @@
+### **Challenges Faced**
+
+1. **Balancing Detail vs. Readability**:  
+   - Too many states make diagrams complex.  
+   - Too few states lose critical transitions.  
+2. **Aligning Diagrams with Agile User Stories**:  
+   - Ensuring workflows follow sprint tasks.  
+   - Keeping consistency with Kanban workflow.  
+
+### **Comparison: State vs. Activity Diagrams**
+- **State Diagrams** show object lifecycle (e.g., task progression).  
+- **Activity Diagrams** focus on process flow (e.g., user interactions).  
+- Both are needed for complete system modeling.
+
