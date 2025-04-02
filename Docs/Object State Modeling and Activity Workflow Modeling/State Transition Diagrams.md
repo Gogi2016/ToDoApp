@@ -21,6 +21,8 @@ Deleted: The user deletes their account permanently.
 
 Functional Requirement Mapping: Ensures account management as per FR-001 (User Registration & Management). 
 
+
+
 ## Task State Transition Diagram
 
 ```mermaid
