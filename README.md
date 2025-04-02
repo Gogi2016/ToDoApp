@@ -64,13 +64,13 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [State Transition Diagrams](Docs/Object%20State%20Modeling%20and%20Activity%20Workflow%20Modeling/State%20Transition%20Diagrams.md)
 
 #### 📌 Specification & Architectural Modeling  
-- [Architecture Document](Docs/Specification%20and%20Architectural%20Modeling/ARCHITECTURE.md)
-- [Specification Document](Docs/Specification%20and%20Architectural%20Modeling/SPECIFICATION.md)
+[Architecture Document](./Docs/Specification%20and%20Architectural%20Modeling/ARCHITECTURE.md)
+[Specification Document](./Docs/Specification%20and%20Architectural%20Modeling/SPECIFICATION.md)
 
 #### 📌 Stakeholder & System Requirements  
-- [Stakeholder Analysis Document](Docs/Stakeholder%20and%20System%20Requirements/StakeholderAnalysis.md)
-- [System Requirement Document](Docs/Stakeholder%20and%20System%20Requirements/SystemRequirementDocument.md)
+[Stakeholder Analysis Document](./Docs/Stakeholder%20and%20System%20Requirements/StakeholderAnalysis.md)
+[System Requirement Document](./Docs/Stakeholder%20and%20System%20Requirements/SystemRequirementDocument.md)
 
 #### 📌 Use Case & Test Case Development  
-- [Test Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/TestCase.md)
-- [Use Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/UseCase.md)
+[Test Case Document](./Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/TestCase.md)
+[Use Case Document](./Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/UseCase.md)
