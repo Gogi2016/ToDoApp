@@ -1,12 +1,13 @@
 ## User Account State Transition Diagram
 
+```mermaid
 graph TD;
     Registered -->|Activates Account| Active;
     Active -->|Suspended by Admin| Suspended;
     Active -->|User Deletes Account| Deleted;
     Suspended -->|Reactivates Account| Active;
     Deleted -->|Cannot Be Restored| X;
-
+```
 
    # Explanation
 
