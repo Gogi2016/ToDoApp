@@ -1,0 +1,6 @@
+# Challenges in Translating Requirements to Use Cases and Tests
+
+- **Ensuring Coverage:** Defining all necessary use cases required careful mapping of user actions.
+- **Handling Edge Cases:** Alternative flows were critical to covering invalid inputs.
+- **Testing Local Storage:** Since no backend is used, verifying persistent data required specific test cases.
+- **Security Concerns:** Without encryption, password handling remains a limitation
