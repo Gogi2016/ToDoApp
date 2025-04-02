@@ -9,7 +9,7 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - **Task Management**: Add, edit, delete, and update the status of your tasks.
 - **Task Status**: Tasks can be marked as "complete" or "incomplete".
 - **Local Storage**: All data is saved using the browser's `localStorage`, ensuring persistence between sessions.
-- **Delete Account**: Account deleted will be permanantley delete on localStorage.
+- **Delete Account**: Account deleted will be permanently deleted on localStorage.
 
 ## How to Use
 
@@ -38,7 +38,7 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
     page. You will be able to reset your password through local storage (without a backend service)
 
 7.  **Delete Account**:
-    - You can Delete your account and can can be deleted to localStorage too.
+    - You can delete your account, and it will also be removed from localStorage.
    
 ## Installation
 
@@ -49,7 +49,9 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 ### Steps to Run Locally
 
 1. Clone or download the repository:
+   ```sh
    git clone https://github.com/Gogi2016/ToDoApp.git
+   ```
    
 ### Links
 
@@ -63,3 +65,14 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [Integration with Prior Work](Docs/Object%20State%20Modeling%20and%20Activity%20Workflow%20Modeling/Integration%20with%20Prior%20Work.md)
 - [State Transition Diagrams](Docs/Object%20State%20Modeling%20and%20Activity%20Workflow%20Modeling/State%20Transition%20Diagrams.md)
 
+#### 📌 Specification and Architectural Modeling  
+- [Architecture Document](Docs/Specification%20and%20Architectural%20Modeling/ARCHITECTURE.md)
+- [Specification Document](Docs/Specification%20and%20Architectural%20Modeling/SPECIFICATION.md)
+
+#### 📌 Stakeholder and System Requirements  
+- [Stakeholder Analysis](Docs/Stakeholder%20and%20System%20Requirements/StakeholderAnalysis.md)
+- [System Requirement Document](Docs/Stakeholder%20and%20System%20Requirements/SystemRequirementDocument.md)
+
+#### 📌 Use Case Modeling and Test Case Development  
+- [Test Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/TestCase.md)
+- [Use Case Document](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20Development/UseCase.md)
