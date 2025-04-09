@@ -66,11 +66,11 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [ARCHITECTURE](Docs/Specification%20and%20%20Architectural%20Modeling/ARCHITECTURE.md)
 - [SPECIFICATION](Docs/Specification%20and%20%20Architectural%20Modeling/SPECIFICATION.md)
 
-- [StakeholderAnalysis](Docs/Stakeholder%20and%20System%20%20Requirements/StakeholderAnalysis.md)
-- [SystemRequirementDocument](Docs/Stakeholder%20and%20System%20%20Requirements/SystemRequirementDocument.md)
+- [Stakeholder Analysis](Docs/Stakeholder%20and%20System%20%20Requirements/StakeholderAnalysis.md)
+- [System Requirement Document](Docs/Stakeholder%20and%20System%20%20Requirements/SystemRequirementDocument.md)
 
-- [TestCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
-- [UseCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
+- [Test Case](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
+- [Use Case](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
 
-- [TestCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
-- [UseCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
+- [Domain Model](Docs/Domain%20Modeling%20and%20Class%20Diagram%20Developmen/Domain%20model.md)
+- [Class Diagram](Docs/Domain%20Modeling%20and%20Class%20Diagram%20Developmen/class%20diagram.md)
