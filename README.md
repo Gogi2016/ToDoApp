@@ -63,12 +63,14 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 - [Integration with Prior Work](Docs/Object%20State%20Modeling%20and%20Activity%20Workflow%20Modeling/Integration%20with%20Prior%20Work.md)
 - [State Transition Diagrams](Docs/Object%20State%20Modeling%20and%20Activity%20Workflow%20Modeling/State%20Transition%20Diagrams.md)
 
-- [ARCHITECTURE.md](Docs/Specification%20and%20%20Architectural%20Modeling/ARCHITECTURE.md)
-- [SPECIFICATION.md](Docs/Specification%20and%20%20Architectural%20Modeling/SPECIFICATION.md)
+- [ARCHITECTURE](Docs/Specification%20and%20%20Architectural%20Modeling/ARCHITECTURE.md)
+- [SPECIFICATION](Docs/Specification%20and%20%20Architectural%20Modeling/SPECIFICATION.md)
 
-- [StakeholderAnalysis.md](Docs/Stakeholder%20and%20System%20%20Requirements/StakeholderAnalysis.md)
-- [SystemRequirementDocument.md](Docs/Stakeholder%20and%20System%20%20Requirements/SystemRequirementDocument.md)
+- [StakeholderAnalysis](Docs/Stakeholder%20and%20System%20%20Requirements/StakeholderAnalysis.md)
+- [SystemRequirementDocument](Docs/Stakeholder%20and%20System%20%20Requirements/SystemRequirementDocument.md)
 
-- [TestCase.md](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
-- [UseCase.md](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
+- [TestCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
+- [UseCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
 
+- [TestCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/TestCase.md)
+- [UseCase](Docs/Use%20Case%20Modeling%20and%20Test%20Case%20%20Development/UseCase.md)
