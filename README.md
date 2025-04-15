@@ -39,6 +39,42 @@ Welcome to the To-Do App, your personal task management tool! This app helps you
 
 7.  **Delete Account**:
     - You can delete your account, and it will also be removed from localStorage.
+
+  # From Class Diagrams to Code with All Creational Patternsn
+
+## 🧠 Language Choice: Python 3.x
+
+**Why Python?**
+- ✅ Simple and readable syntax
+- ✅ Supports OOP principles (Inheritance, Polymorphism, Encapsulation)
+- ✅ Rich standard library and mature testing ecosystem (`unittest`, `pytest`)
+- ✅ Ideal for quick prototyping and scalable design pattern implementation
+
+---
+
+## 📐 UML Class Diagram Summary
+
+Key classes and their responsibilities:
+- `User`, `Admin`: Manage accounts, authentication, and task interactions
+- `Task`, `TaskManager`: Handle task creation, update, and status toggling
+- `AuthSystem`: Central authentication manager using Singleton
+- `Storage`: Shared utility class for persistence simulation
+- `Notification`: Represents system-generated messages to users
+- `Account`: Represents lifecycle-tied user account
+
+---
+
+## 🏗️ Creational Design Patterns Used
+
+| Pattern          | Use Case in Project                                  | Reason                                                                 |
+|------------------|------------------------------------------------------|------------------------------------------------------------------------|
+| **Simple Factory** | `TaskFactory` creates different task types         | Centralizes object creation logic                                     |
+| **Factory Method** | `NotificationFactory` with subclasses for Email/SMS| Lets subclasses decide which class to instantiate                     |
+| **Abstract Factory** | `GUIFactory` creates OS-specific UI components  | Creates families of related objects without specifying concrete classes|
+| **Builder**        | `UserBuilder` for flexible User creation           | Constructs complex objects with optional attributes                    |
+| **Prototype**      | `Task` clone method                                | Useful for copying task templates efficiently                         |
+| **Singleton**      | `AuthSystem` instance shared across app            | Ensures a single global instance for authentication                   |
+
    
 ## Installation
 
