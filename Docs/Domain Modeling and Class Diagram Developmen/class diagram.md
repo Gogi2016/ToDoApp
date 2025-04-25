@@ -136,7 +136,7 @@ Admin --|> User : inherits
 %% Note: Storage is a shared utility class, used by both Task and User
 note for Storage "Shared utility for localStorage persistence\nUsed by both Task and User"
 
-%% Note for Account
+%% Note For Account
 note for Account "Account is tightly coupled to User and deleted when User is deleted"
 
 TaskRepository ..|> Repository~Task, String~
