@@ -84,8 +84,8 @@ class Repository~T, ID~ {
   + delete(id: ID): void
 }
 
-class TaskRepository %% Fixed: no empty curly braces
-%% Interface placeholder for Task repository
+class TaskRepository
+%% Removed empty curly braces to avoid errors
 
 class InMemoryTaskRepository {
   - storage: Map~String, Task~
@@ -145,6 +145,5 @@ FileSystemTaskRepository ..|> TaskRepository
 RepositoryFactory --> TaskRepository
 
 TaskManager --> TaskRepository
-
 
 ```
