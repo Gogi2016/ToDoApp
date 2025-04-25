@@ -30,7 +30,7 @@ class Task {
 }
 
 class AuthSystem {
-  - users: List<User>
+  - users: List~User~
   - currentUser: User
   + authenticateUser()
   + logout()
@@ -38,7 +38,7 @@ class AuthSystem {
 }
 
 class TaskManager {
-  - tasks: List<Task>
+  - tasks: List~Task~
   + addTask()
   + updateTask()
   + removeTask()
@@ -75,34 +75,36 @@ class Notification {
   + sendNotification()
   + markAsRead()
 }
+
+%% Repository Layer
 class Repository~T, ID~ {
-    +save(entity: T): void
-    +findById(id: ID): Optional~T~
-    +findAll(): List~T~
-    +delete(id: ID): void
+  + save(entity: T): void
+  + findById(id: ID): Optional~T~
+  + findAll(): List~T~
+  + delete(id: ID): void
 }
 
-class TaskRepository {
-}
+class TaskRepository %% Fixed: no empty curly braces
+%% Interface placeholder for Task repository
 
 class InMemoryTaskRepository {
-    -storage: Map~String, Task~
-    +save(task: Task): void
-    +findById(id: String): Optional~Task~
-    +findAll(): List~Task~
-    +delete(id: String): void
+  - storage: Map~String, Task~
+  + save(task: Task): void
+  + findById(id: String): Optional~Task~
+  + findAll(): List~Task~
+  + delete(id: String): void
 }
 
 class FileSystemTaskRepository {
-    -filePath: String
-    +save(task: Task): void
-    +findById(id: String): Optional~Task~
-    +findAll(): List~Task~
-    +delete(id: String): void
+  - filePath: String
+  + save(task: Task): void
+  + findById(id: String): Optional~Task~
+  + findAll(): List~Task~
+  + delete(id: String): void
 }
 
 class RepositoryFactory {
-    +getTaskRepository(storageType: String): TaskRepository
+  + getTaskRepository(storageType: String): TaskRepository
 }
 
 %% =====================
@@ -143,4 +145,6 @@ FileSystemTaskRepository ..|> TaskRepository
 RepositoryFactory --> TaskRepository
 
 TaskManager --> TaskRepository
+
+
 ```
