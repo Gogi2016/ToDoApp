@@ -76,6 +76,37 @@ class Notification {
   + markAsRead()
 }
 
+%% Repository Layer
+class Repository~T, ID~ {
+    +save(entity: T): void
+    +findById(id: ID): Optional~T~
+    +findAll(): List~T~
+    +delete(id: ID): void
+}
+
+class TaskRepository {
+}
+
+class InMemoryTaskRepository {
+    -storage: Map~String, Task~
+    +save(task: Task): void
+    +findById(id: String): Optional~Task~
+    +findAll(): List~Task~
+    +delete(id: String): void
+}
+
+class FileSystemTaskRepository {
+    -filePath: String
+    +save(task: Task): void
+    +findById(id: String): Optional~Task~
+    +findAll(): List~Task~
+    +delete(id: String): void
+}
+
+class RepositoryFactory {
+    +getTaskRepository(storageType: String): TaskRepository
+}
+
 %% =====================
 %% Relationships
 %% =====================
@@ -107,4 +138,11 @@ note for Storage "Shared utility for localStorage persistence\nUsed by both Task
 
 %% Note for Account
 note for Account "Account is tightly coupled to User and deleted when User is deleted"
+
+TaskRepository ..|> Repository~Task, String~
+InMemoryTaskRepository ..|> TaskRepository
+FileSystemTaskRepository ..|> TaskRepository
+RepositoryFactory --> TaskRepository
+
+TaskManager --> TaskRepository
 ```
