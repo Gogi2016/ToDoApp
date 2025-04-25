@@ -75,8 +75,6 @@ class Notification {
   + sendNotification()
   + markAsRead()
 }
-
-%% Repository Layer
 class Repository~T, ID~ {
     +save(entity: T): void
     +findById(id: ID): Optional~T~
