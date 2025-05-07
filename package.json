@@ -1,0 +1,15 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Welcome to the To-Do App, your personal task management tool! This app helps you stay organized by allowing you to register, log in, reset your password, manage your tasks and delete account. It’s a simple, user-friendly application that allows you to track and organize your daily tasks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

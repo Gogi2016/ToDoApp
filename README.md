@@ -88,6 +88,14 @@ Key classes and their responsibilities:
    ```sh
    git clone https://github.com/Gogi2016/ToDoApp.git
    ```
+
+### Tests
+
+npm install
+npm install --save-dev jest
+ 
+ run the test npm test
+
    
 ### Links
 

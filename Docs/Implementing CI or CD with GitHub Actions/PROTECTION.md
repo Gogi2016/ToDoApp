@@ -1,15 +1,10 @@
-# Branch Protection Rules
+# Branch Protection Rules Justification
 
-We use branch protection on `main` to maintain code quality and avoid introducing bugs.
+The following rules are applied to the `main` branch:
 
-## Rules Enforced
-- ✅ All changes must go through Pull Requests.
-- ✅ At least one team member must approve the PR.
-- ✅ All CI tests must pass before merging.
-- ❌ Direct pushes to `main` are not allowed.
+- **Require PR reviews**: Ensures code is reviewed and approved before merging to maintain code quality.
+- **Require status checks**: Prevents merging if tests fail, ensuring functional stability.
+- **Disable direct pushes**: Forces changes to go through a review process.
+- **Keeps history clean** and helps teams follow best practices for collaboration and CI/CD.
 
-## Why it matters
-These rules:
-- Encourage collaboration through peer reviews.
-- Prevent broken code from reaching production.
-- Align with industry best practices for DevOps and CI/CD.
+These rules align with industry standards and help avoid bugs reaching production.
