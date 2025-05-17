@@ -1,0 +1,23 @@
+# Reflection on Open-Source Collaboration – ToDoApp
+
+## 1. Improvements Based on Peer Feedback
+
+Throughout the peer review process, I received valuable feedback from classmates regarding usability, contribution guidelines, and clarity. One suggestion was to improve the installation instructions in the README, which I updated by adding detailed steps under the "Getting Started" section. Another common suggestion was to improve the mobile responsiveness and UI of the app. Based on this, I created good-first-issue tasks to guide contributors in improving the UI and responsiveness.
+
+Additionally, classmates appreciated the inclusion of labels like `good-first-issue` and `feature-request`, which made it easier for them to understand where they could contribute. I also added a detailed ROADMAP.md to give direction to the project and encourage collaboration on new features.
+
+## 2. Challenges in Onboarding Contributors
+
+One challenge I faced was ensuring that new contributors could set up the project easily. At first, some classmates had difficulty running the project locally due to missing setup instructions. To solve this, I updated the README with clear prerequisites, install steps, and how to run tests.
+
+Another challenge was communicating contribution standards. To address this, I created a CONTRIBUTING.md file outlining how to fork, choose issues, write code, and submit PRs. Some contributors still needed guidance on GitHub basics like branching and pull requests, so I provided one-on-one help and linked GitHub Docs.
+
+Managing time and merging pull requests from multiple people also became a learning experience. I learned how to review code respectfully and make suggestions without discouraging contributors.
+
+## 3. Lessons Learned
+
+This assignment gave me real insight into how open-source collaboration works. I learned that documentation and onboarding materials are just as important as code when working with a team. I also realized that labeling issues clearly and writing a roadmap helps guide contributors and keeps the project organized.
+
+Furthermore, I experienced firsthand how collaboration improves a project. Features I hadn’t considered were suggested by peers, and some even contributed enhancements. It also felt rewarding to see others interested in contributing to my work.
+
+In conclusion, this assignment taught me the value of feedback, the importance of clear communication, and how to manage an open-source project responsibly. I now feel more confident in my ability to participate in or lead collaborative software projects in the future.

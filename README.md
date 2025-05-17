@@ -76,30 +76,7 @@ Key classes and their responsibilities:
 | **Singleton**      | `AuthSystem` instance shared across app            | Ensures a single global instance for authentication                   |
 
    
-## Installation
-
-### Prerequisites
-
-- Web browser (Chrome, Firefox, etc.)
-
-### Steps to Run Locally
-
-1. Clone or download the repository:
-   ```sh
-   git clone https://github.com/Gogi2016/ToDoApp.git
-   ```
-
-### Tests
-
-npm install
-npm install --save-dev jest
- 
- run the test npm test
-
-   
 ### Links
-
-[To-Do App](https://gogi2016.github.io/ToDoApp/)
 
 - [Agile Planning Document](Docs/Agile%20User%20Stories%2C%20Backlog%2C%20and%20Sprint%20Planning/Agile-Planning.md)
  
@@ -118,3 +95,47 @@ npm install --save-dev jest
 
 - [Domain Model](Docs/Domain%20Modeling%20and%20Class%20Diagram%20Developmen/Domain%20model.md)
 - [Class Diagram](Docs/Domain%20Modeling%20and%20Class%20Diagram%20Developmen/class%20diagram.md)
+
+
+
+### 🧩 Add "Features for Contribution" Table
+
+```md
+## Features for Contribution
+
+| Feature                          | Status  | Type             |
+|----------------------------------|---------|------------------|
+| Dark Mode Toggle                 | Planned | Feature Request  |
+| Task Categories & Filters        | Planned | Feature Request  |
+| Google Sign-In Integration       | Planned | Feature Request  |
+| Add Hover Effects to Buttons     | Open    | Good First Issue |
+| Refactor `app.js`                | Open    | Good First Issue |
+| Unit Test for Login Function     | Open    | Good First Issue |
+| Mobile Responsiveness Fix        | Open    | Good First Issue |
+
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- npm
+- Web browser (Chrome, Firefox, etc.)
+
+### Steps to Run Locally
+
+1. Clone or download the repository:
+   ```sh
+   git clone https://github.com/Gogi2016/ToDoApp.git
+   ```
+
+### Tests
+
+npm install
+npm install --save-dev jest
+ 
+ run the test npm test
+
+### Go live 
+[To-Do App](https://gogi2016.github.io/ToDoApp/)
+
