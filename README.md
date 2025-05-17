@@ -125,9 +125,9 @@ Key classes and their responsibilities:
 ### Steps to Run Locally
 
 1. Clone or download the repository:
-   ```sh
+   
    git clone https://github.com/Gogi2016/ToDoApp.git
-   ```
+
 
 ### Tests
 
