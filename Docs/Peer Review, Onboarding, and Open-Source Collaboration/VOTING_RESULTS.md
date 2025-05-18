@@ -1,10 +1,10 @@
 # Voting Results – ToDoApp Open Source Collaboration
 
 ## ⭐ Star Count
-Total GitHub Stars: **8**
+Total GitHub Stars: **22**
 
 ## 🍴 Fork Count
-Total GitHub Forks: **5**
+Total GitHub Forks: **16**
 
 ## 🧑‍🤝‍🧑 Peer Feedback Summary
 
