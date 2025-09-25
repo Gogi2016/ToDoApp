@@ -236,8 +236,12 @@ body {
   h1, h2 {
     color: #4CAF50;
   }
-  
-  /* Responsive Styles */
+
+.google-signin-btn img {
+  display: none;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   body {
     flex-direction: column;

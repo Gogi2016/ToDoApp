@@ -23,7 +23,7 @@
      </div>
    </div>
 
-  <!-- Register Page -->
+    <!-- Register Page -->
   <div id="register-page" class="page">
     <button class="back-icon" onclick="navigateTo('welcome')">←</button>
     <h1>Register</h1>
@@ -33,9 +33,13 @@
       <input type="password" id="password" placeholder="Enter your password" required><br>
       <button type="submit">Register</button>
     </form>
+    <p>Or login with:</p>    
+    <button class="cta-btn google-signin-btn" onclick="window.location.href='/login'" type="button">
+      Sign in with Google
+    </button>
     <p>Already have an account? <button onclick="navigateTo('login')">Login</button></p>
   </div>
-
+  
   <!-- Login Page -->
   <div id="login-page" class="page">
     <button class="back-icon" onclick="navigateTo('welcome')">←</button>
@@ -46,10 +50,14 @@
       <button type="submit">Login</button>
     </form>
     <p>Forgot your password? <button onclick="recoverPassword()">Recover Password</button></p>
+    <p>Or login with:</p>    
+    <button class="cta-btn google-signin-btn" onclick="window.location.href='/login'" type="button">
+      Sign in with Google
+    </button>
     <p>Don't have an account? <button onclick="navigateTo('register')">Register</button></p>
   </div>
 
-<!-- Task Management Page --> 
+<!-- Task Management Page -->
  <div id="task-page" class="page">
   <button class="home-icon" onclick="navigateTo('welcome')">🏠</button>
   <h1>Welcome, <span id="user-name"></span></h1>
